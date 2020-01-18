@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,10 +11,46 @@
 		F099E11323D3AE7400F20B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E11223D3AE7400F20B7B /* AppDelegate.swift */; };
 		F099E11523D3AE7400F20B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E11423D3AE7400F20B7B /* SceneDelegate.swift */; };
 		F099E11723D3AE7400F20B7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E11623D3AE7400F20B7B /* ViewController.swift */; };
-		F099E11A23D3AE7400F20B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F099E11823D3AE7400F20B7B /* Main.storyboard */; };
-		F099E11C23D3AE7600F20B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F099E11B23D3AE7600F20B7B /* Assets.xcassets */; };
 		F099E11F23D3AE7600F20B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F099E11D23D3AE7600F20B7B /* LaunchScreen.storyboard */; };
+		F099E12823D3AFD600F20B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F099E12723D3AFD600F20B7B /* Main.storyboard */; };
+		F099E12C23D3AFEB00F20B7B /* EGPNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E12923D3AFEA00F20B7B /* EGPNetwork.swift */; };
+		F099E12D23D3AFEB00F20B7B /* ETHGasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E12A23D3AFEB00F20B7B /* ETHGasModel.swift */; };
+		F099E12E23D3AFEB00F20B7B /* EthPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E12B23D3AFEB00F20B7B /* EthPriceModel.swift */; };
+		F099E13123D3B02400F20B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F099E13023D3B02400F20B7B /* Assets.xcassets */; };
+		F099E13823D3B0DB00F20B7B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F099E13723D3B0DB00F20B7B /* NotificationCenter.framework */; };
+		F099E14223D3B0DB00F20B7B /* Ethereum Gas Price Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F099E13623D3B0DB00F20B7B /* Ethereum Gas Price Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F099E15A23D3B12B00F20B7B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E15823D3B12B00F20B7B /* TodayViewController.swift */; };
+		F099E15D23D3B13E00F20B7B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F099E15C23D3B13E00F20B7B /* MainInterface.storyboard */; };
+		F099E15E23D3B16000F20B7B /* EGPNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E12923D3AFEA00F20B7B /* EGPNetwork.swift */; };
+		F099E16423D3B1A100F20B7B /* ETHGasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E12A23D3AFEB00F20B7B /* ETHGasModel.swift */; };
+		F099E16523D3B1A400F20B7B /* EthPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E12B23D3AFEB00F20B7B /* EthPriceModel.swift */; };
+		F099E16723D3B28400F20B7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E16623D3B28400F20B7B /* Constants.swift */; };
+		F099E16823D3B28400F20B7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099E16623D3B28400F20B7B /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F099E14023D3B0DB00F20B7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F099E10723D3AE7400F20B7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F099E13523D3B0DB00F20B7B;
+			remoteInfo = "Ethereum Gas Price Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F099E14623D3B0DB00F20B7B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F099E14223D3B0DB00F20B7B /* Ethereum Gas Price Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9095ACB4CD0A1519B8A1FA9A /* Pods_Ethereum_Gas_Price.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ethereum_Gas_Price.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +60,19 @@
 		F099E11223D3AE7400F20B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F099E11423D3AE7400F20B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F099E11623D3AE7400F20B7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F099E11923D3AE7400F20B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F099E11B23D3AE7600F20B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F099E11E23D3AE7600F20B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F099E12023D3AE7600F20B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F099E12723D3AFD600F20B7B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F099E12923D3AFEA00F20B7B /* EGPNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGPNetwork.swift; sourceTree = "<group>"; };
+		F099E12A23D3AFEB00F20B7B /* ETHGasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETHGasModel.swift; sourceTree = "<group>"; };
+		F099E12B23D3AFEB00F20B7B /* EthPriceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthPriceModel.swift; sourceTree = "<group>"; };
+		F099E13023D3B02400F20B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/EthGasPrice/EthGasPrice/Assets.xcassets; sourceTree = "<group>"; };
+		F099E13623D3B0DB00F20B7B /* Ethereum Gas Price Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ethereum Gas Price Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F099E13723D3B0DB00F20B7B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F099E13F23D3B0DB00F20B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F099E15823D3B12B00F20B7B /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = ../../../../../.Trash/TodayViewController.swift; sourceTree = "<group>"; };
+		F099E15C23D3B13E00F20B7B /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F099E16623D3B28400F20B7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +84,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F099E13323D3B0DB00F20B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F099E13823D3B0DB00F20B7B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9095ACB4CD0A1519B8A1FA9A /* Pods_Ethereum_Gas_Price.framework */,
+				F099E13723D3B0DB00F20B7B /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -56,7 +110,6 @@
 				C8349BC990DDFABA75A61591 /* Pods-Ethereum Gas Price.debug.xcconfig */,
 				DE31E249436E5C514A538EDD /* Pods-Ethereum Gas Price.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F099E11123D3AE7400F20B7B /* Ethereum Gas Price */,
+				F099E13923D3B0DB00F20B7B /* Ethereum Gas Price Extension */,
 				F099E11023D3AE7400F20B7B /* Products */,
 				E3C82529EB44B5D444D54A06 /* Pods */,
 				A63B390A0D5F4AADAEDF1881 /* Frameworks */,
@@ -74,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F099E10F23D3AE7400F20B7B /* Ethereum Gas Price.app */,
+				F099E13623D3B0DB00F20B7B /* Ethereum Gas Price Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,15 +136,69 @@
 		F099E11123D3AE7400F20B7B /* Ethereum Gas Price */ = {
 			isa = PBXGroup;
 			children = (
-				F099E11223D3AE7400F20B7B /* AppDelegate.swift */,
-				F099E11423D3AE7400F20B7B /* SceneDelegate.swift */,
-				F099E11623D3AE7400F20B7B /* ViewController.swift */,
-				F099E11823D3AE7400F20B7B /* Main.storyboard */,
-				F099E11B23D3AE7600F20B7B /* Assets.xcassets */,
-				F099E11D23D3AE7600F20B7B /* LaunchScreen.storyboard */,
+				F099E12623D3AFAC00F20B7B /* Initialization */,
+				F099E16123D3B17300F20B7B /* Model */,
+				F099E16323D3B18600F20B7B /* View */,
+				F099E16223D3B17D00F20B7B /* Controller */,
+				F099E12F23D3AFF100F20B7B /* Network */,
+				F099E13023D3B02400F20B7B /* Assets.xcassets */,
 				F099E12023D3AE7600F20B7B /* Info.plist */,
 			);
 			path = "Ethereum Gas Price";
+			sourceTree = "<group>";
+		};
+		F099E12623D3AFAC00F20B7B /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				F099E11223D3AE7400F20B7B /* AppDelegate.swift */,
+				F099E11423D3AE7400F20B7B /* SceneDelegate.swift */,
+			);
+			path = Initialization;
+			sourceTree = "<group>";
+		};
+		F099E12F23D3AFF100F20B7B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F099E12923D3AFEA00F20B7B /* EGPNetwork.swift */,
+				F099E16623D3B28400F20B7B /* Constants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F099E13923D3B0DB00F20B7B /* Ethereum Gas Price Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F099E15C23D3B13E00F20B7B /* MainInterface.storyboard */,
+				F099E15823D3B12B00F20B7B /* TodayViewController.swift */,
+				F099E13F23D3B0DB00F20B7B /* Info.plist */,
+			);
+			path = "Ethereum Gas Price Extension";
+			sourceTree = "<group>";
+		};
+		F099E16123D3B17300F20B7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F099E12A23D3AFEB00F20B7B /* ETHGasModel.swift */,
+				F099E12B23D3AFEB00F20B7B /* EthPriceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F099E16223D3B17D00F20B7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F099E11623D3AE7400F20B7B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F099E16323D3B18600F20B7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F099E12723D3AFD600F20B7B /* Main.storyboard */,
+				F099E11D23D3AE7600F20B7B /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,15 +213,34 @@
 				F099E10C23D3AE7400F20B7B /* Frameworks */,
 				F099E10D23D3AE7400F20B7B /* Resources */,
 				402EC824D25EAEA45AA00232 /* [CP] Embed Pods Frameworks */,
+				F099E14623D3B0DB00F20B7B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F099E14123D3B0DB00F20B7B /* PBXTargetDependency */,
 			);
 			name = "Ethereum Gas Price";
 			productName = "Ethereum Gas Price";
 			productReference = F099E10F23D3AE7400F20B7B /* Ethereum Gas Price.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F099E13523D3B0DB00F20B7B /* Ethereum Gas Price Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F099E14323D3B0DB00F20B7B /* Build configuration list for PBXNativeTarget "Ethereum Gas Price Extension" */;
+			buildPhases = (
+				F099E13223D3B0DB00F20B7B /* Sources */,
+				F099E13323D3B0DB00F20B7B /* Frameworks */,
+				F099E13423D3B0DB00F20B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ethereum Gas Price Extension";
+			productName = "Ethereum Gas Price Extension";
+			productReference = F099E13623D3B0DB00F20B7B /* Ethereum Gas Price Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -125,6 +253,9 @@
 				ORGANIZATIONNAME = "Jing Song Du";
 				TargetAttributes = {
 					F099E10E23D3AE7400F20B7B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F099E13523D3B0DB00F20B7B = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -143,6 +274,7 @@
 			projectRoot = "";
 			targets = (
 				F099E10E23D3AE7400F20B7B /* Ethereum Gas Price */,
+				F099E13523D3B0DB00F20B7B /* Ethereum Gas Price Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -153,8 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F099E11F23D3AE7600F20B7B /* LaunchScreen.storyboard in Resources */,
-				F099E11C23D3AE7600F20B7B /* Assets.xcassets in Resources */,
-				F099E11A23D3AE7400F20B7B /* Main.storyboard in Resources */,
+				F099E13123D3B02400F20B7B /* Assets.xcassets in Resources */,
+				F099E12823D3AFD600F20B7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F099E13423D3B0DB00F20B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F099E15D23D3B13E00F20B7B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,22 +348,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				F099E11723D3AE7400F20B7B /* ViewController.swift in Sources */,
+				F099E12E23D3AFEB00F20B7B /* EthPriceModel.swift in Sources */,
+				F099E12C23D3AFEB00F20B7B /* EGPNetwork.swift in Sources */,
 				F099E11323D3AE7400F20B7B /* AppDelegate.swift in Sources */,
+				F099E16723D3B28400F20B7B /* Constants.swift in Sources */,
 				F099E11523D3AE7400F20B7B /* SceneDelegate.swift in Sources */,
+				F099E12D23D3AFEB00F20B7B /* ETHGasModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F099E13223D3B0DB00F20B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F099E16823D3B28400F20B7B /* Constants.swift in Sources */,
+				F099E16423D3B1A100F20B7B /* ETHGasModel.swift in Sources */,
+				F099E15A23D3B12B00F20B7B /* TodayViewController.swift in Sources */,
+				F099E15E23D3B16000F20B7B /* EGPNetwork.swift in Sources */,
+				F099E16523D3B1A400F20B7B /* EthPriceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F099E11823D3AE7400F20B7B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F099E11923D3AE7400F20B7B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		F099E14123D3B0DB00F20B7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F099E13523D3B0DB00F20B7B /* Ethereum Gas Price Extension */;
+			targetProxy = F099E14023D3B0DB00F20B7B /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		F099E11D23D3AE7600F20B7B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8349BC990DDFABA75A61591 /* Pods-Ethereum Gas Price.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F2BYR78VB;
@@ -372,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE31E249436E5C514A538EDD /* Pods-Ethereum Gas Price.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F2BYR78VB;
@@ -382,6 +540,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdu.EthereumGasPrice.Ethereum-Gas-Price";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F099E14423D3B0DB00F20B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F2BYR78VB;
+				INFOPLIST_FILE = "Ethereum Gas Price Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdu.EthereumGasPrice.Ethereum-Gas-Price.Ethereum-Gas-Price-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F099E14523D3B0DB00F20B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F2BYR78VB;
+				INFOPLIST_FILE = "Ethereum Gas Price Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdu.EthereumGasPrice.Ethereum-Gas-Price.Ethereum-Gas-Price-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +600,15 @@
 			buildConfigurations = (
 				F099E12423D3AE7600F20B7B /* Debug */,
 				F099E12523D3AE7600F20B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F099E14323D3B0DB00F20B7B /* Build configuration list for PBXNativeTarget "Ethereum Gas Price Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F099E14423D3B0DB00F20B7B /* Debug */,
+				F099E14523D3B0DB00F20B7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
