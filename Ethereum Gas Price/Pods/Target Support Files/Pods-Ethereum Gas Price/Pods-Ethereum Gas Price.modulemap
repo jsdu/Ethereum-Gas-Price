@@ -1,0 +1,6 @@
+framework module Pods_Ethereum_Gas_Price {
+  umbrella header "Pods-Ethereum Gas Price-umbrella.h"
+
+  export *
+  module * { export * }
+}
