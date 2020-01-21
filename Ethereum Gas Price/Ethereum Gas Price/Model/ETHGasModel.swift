@@ -24,23 +24,6 @@ public struct ETHGasModel : Codable, Equatable, Hashable {
 
     public let averageTransfer = 21000.0 // GWEI per transaction
 
-    // Maps Gwei * 10 to Time
-    enum CodingKeys: String, CodingKey {
-
-        case fast = "fast"
-        case fastest = "fastest"
-        case safeLow = "safeLow"
-        case average = "average"
-        case block_time = "block_time"
-        case blockNum = "blockNum"
-        case speed = "speed"
-        case safeLowWait = "safeLowWait"
-        case avgWait = "avgWait"
-        case fastWait = "fastWait"
-        case fastestWait = "fastestWait"
-        case gasPriceRange = "gasPriceRange"
-    }
-
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         fast = try values.decode(Double.self, forKey: .fast)
