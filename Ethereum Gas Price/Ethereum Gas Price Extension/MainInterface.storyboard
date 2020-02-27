@@ -10,7 +10,7 @@
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="EthGasPrice_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Ethereum_Gas_Price_Extension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,10 +142,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="229"/>
                     <connections>
-                        <outlet property="backgroundView" destination="CxS-xl-9ZO" id="Tfa-3c-DUQ"/>
-                        <outlet property="fastGwei" destination="zHF-7a-WG7" id="vy0-Ix-BWX"/>
-                        <outlet property="lowGwei" destination="SvW-K3-Ywz" id="mIA-3D-hAd"/>
-                        <outlet property="standardGwei" destination="mlb-j4-ZCl" id="hp0-yG-BQq"/>
+                        <outlet property="fastGwei" destination="zHF-7a-WG7" id="Tzs-9b-D3W"/>
+                        <outlet property="lowGwei" destination="SvW-K3-Ywz" id="AbN-dM-Spb"/>
+                        <outlet property="standardGwei" destination="mlb-j4-ZCl" id="6a7-K1-e6W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
